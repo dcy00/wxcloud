@@ -1,0 +1,8 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view>
+  <text>pages/bookDetail/bookDetail.wxml</text>
+  <view class="info-view">{{info}}</view>
+  <!-- <button>重新编辑</button> -->
+  <navigator wx:if="{{id}}" url="../addBook/addBook?id={{id}}" class="uploader-text" open-type="redirect">
+    重新编辑该信息</navigator>
+</view>

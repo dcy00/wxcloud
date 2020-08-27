@@ -1,0 +1,19 @@
+<!--miniprogram/pages/bookQuery/bookQuery.wxml-->
+<view class="container">
+  <view class="input-view">
+    <input value="{{query}}" placeholder="请输入查询名称或作者" confirm-type="search" class="query-input" bindinput="bindInput"></input>
+   <!--双向绑定 -->
+    <!-- <input model:value="{{query}}" placeholder="请输入查询名称或作者" confirm-type="search" class="query-input" ></input> -->
+  </view>
+  <button bindtap="bindquery" type="primary">查询</button>
+  <view wx:if="{{list.length==0}}">暂无内容</view>
+  <scroll-view wx:else scroll-y="true" style="height: 600rpx;" 
+    bindscrolltoupper="upper" 
+    bindscrolltolower="lower" 
+    bindscroll="scroll" 
+    >
+    <view class="scroll-view-item" wx:for="{{list}}" bindtap="goDetail" data-id="{{item._id}}">
+     {{item._id}}
+    </view>
+  </scroll-view>
+</view>

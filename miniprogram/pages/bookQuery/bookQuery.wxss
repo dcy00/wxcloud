@@ -1,0 +1,15 @@
+/* miniprogram/pages/bookQuery/bookQuery.wxss */
+.input-view{
+  width:100%;
+  border:1px solid #e3e3e3;
+}
+.query-input{
+  height:45px;
+  padding:20rpx 30rpx 20rpx 30rpx;
+}
+.scroll-view-item{
+  display: flex;
+  align-items: center;
+  height: 300rpx;
+  border-bottom:1px solid #e3e3e3;
+}

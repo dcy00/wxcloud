@@ -1,0 +1,11 @@
+<!--pages/booksList/booksList.wxml-->
+<view class="container">
+  <view wx:if="{{list.length==0}}">暂无内容</view>
+  <view class="list-container" wx:else>
+    <view>当前共{{list.length}}条内容</view>
+    <view class="list-item" wx:for="{{list}}" wx:key="_id">
+      {{item._id}}
+      <button bindtap="del" data-id="{{item._id}}" type="primary">删除该项</button>
+    </view>
+  </view>
+</view>

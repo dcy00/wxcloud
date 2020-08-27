@@ -1,0 +1,39 @@
+/* miniprogram/pages/addBook.wxss */
+
+.page-body {
+  width: 100%;
+}
+
+.page-section {
+  min-height: 120rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 20rpx solid #e3e3e3;
+}
+
+.page-section-title {
+  min-width: 200rpx;
+}
+
+.radio-item {
+  display: inline-block;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-right: 20rpx;
+}
+
+textarea[name=desc] {
+  padding: 30rpx 0 30rpx;
+}
+
+.btn-area {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rpx;
+  /* border-top: 1px solid #e3e3e3; */
+}

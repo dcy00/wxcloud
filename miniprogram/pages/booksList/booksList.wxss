@@ -1,0 +1,7 @@
+/* pages/booksList/booksList.wxss */
+.list-container{
+  height:100vh;
+}
+.list-item{
+  height:60px;
+}

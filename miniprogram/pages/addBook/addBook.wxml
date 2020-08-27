@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">是否在册</view>
+        <switch name="isIn" checked="{{isIn}}" type="checkbox" bindchange="bindSwitch" />
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">类型</view>
+        <radio-group name="type" bindchange="bindRadio">
+          <label wx:for="{{types}}" class="radio-item">
+            <radio value="{{item}}" checked="{{item == type}}"/>
+            <text>{{item}}</text>
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">标签</view>
+        <checkbox-group name="tags" bindchange="bindCheckbox">
+          <label wx:for="{{tagsArr}}" class="radio-item">
+            <checkbox value="{{item}}" checked="{{checkBoolArr[index]}}"/>
+            <text>{{item}}</text>
+          </label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">名称</view>
+        <input name="title" value="{{title}}" placeholder="请输入名称" bindinput="bindInput"></input>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">作者</view>
+        <input name="author" value="{{author}}" placeholder="请输入作者" bindinput="bindInputAuthor"></input>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">简介</view>
+        <!-- auto-height  -->
+        <textarea name="desc" auto-height value="{{desc}}" placeholder="请输入简介（限200字）" maxlength="200" bindinput="bindTextarea"></textarea>
+      </view>
+
+      <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+        <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+    </form>
+  </view>
+
+</view>

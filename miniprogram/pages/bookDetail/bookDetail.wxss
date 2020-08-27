@@ -1,0 +1,10 @@
+/* pages/bookDetail/bookDetail.wxss */
+.info-view{
+  word-break: break-all;
+}
+.uploader-text{
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #007aff;
+}
