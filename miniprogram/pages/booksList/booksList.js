@@ -1,4 +1,5 @@
 // pages/booksList/booksList.js
+// 列表页面 下拉刷新 上拉加载 删除对应项
 Page({
 
   /**
