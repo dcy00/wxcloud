@@ -3,6 +3,7 @@ const app = getApp()
 
 Page({
   data: {
+    tips: "weui-tips",
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,

@@ -76,4 +76,7 @@
       <text>数据搜索-d</text>
     </navigator>
   </view>
+
+  <!--  weui组件 -->
+  <mp-toptips msg="{{tips}}" type="success" show="{{true}}"></mp-toptips>
 </view>
