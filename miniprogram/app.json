@@ -2,6 +2,7 @@
   "usingComponents": {
     "mp-toptips": "/miniprogram_npm/weui-miniprogram/toptips/toptips"
   },
+  "entryPagePath": "pages/myset/myset",
   "pages": [
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -19,7 +20,8 @@
     "pages/addBook/addBook",
     "pages/booksList/booksList",
     "pages/bookDetail/bookDetail",
-    "pages/bookQuery/bookQuery"
+    "pages/bookQuery/bookQuery",
+    "pages/myset/myset"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -38,7 +40,7 @@
         "selectedIconPath": "images/tabbar/home_active.png"
       },
       {
-        "pagePath": "pages/databaseGuide/databaseGuide",
+        "pagePath": "pages/myset/myset",
         "text": "我的",
         "iconPath": "images/tabbar/my.png",
         "selectedIconPath": "images/tabbar/my_active.png"

@@ -1,0 +1,15 @@
+/* pages/myset/myset.wxss */
+page{
+  text-align: center; 
+}
+.title{
+  font-weight: bold;
+}
+.title-item{
+  color:orangered;
+  border-bottom: 1px solid #e3e3e3;
+}
+.result{
+  display: block;
+  text-align: left;
+}
