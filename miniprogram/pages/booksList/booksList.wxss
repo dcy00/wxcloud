@@ -3,5 +3,5 @@
   height:100vh;
 }
 .list-item{
-  height:60px;
+  height:100px;
 }
